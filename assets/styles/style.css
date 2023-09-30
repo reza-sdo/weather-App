@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "mulish";
+    text-transform: uppercase;
+}
+
+main {
+    /* min-width: 100vw; */
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background: var(--back-gra);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header {
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header .first{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: auto;
+    /* background-color: aqua; */
+    position: relative;
+}
+.header .first span {
+    color: #fff;
+    display: inline-block;
+    /* background-color: blueviolet; */
+    font-size: 2rem;
+    padding: 5px;
+    position: absolute;
+    right: 2px;
+    cursor: pointer;
+
+}
+.header .first input {
+    width: 300px;
+    height: 40px;
+    border-radius: 14px;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.39);
+    color: #fff;
+    outline: 0;
+    padding: 2px 15px;
+    font-size: 1.2rem;
+}
+.header .second{
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.header .second span{
+    margin: 0 10px;
+}
+.header .second span[class="material-symbols-outlined"]{
+    font-size: 2rem;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.app-title{
+    text-align: center;
+    margin: 50px 0;
+    color: #fff;
+    letter-spacing: 8px;
+    word-spacing: 10px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(350px , 1fr));
+    gap: 20px;
+    /* background-color: aqua; */
+    min-width: 350px;
+    max-width: 100%;
+}
+
+.card{
+    width: 350px ;
+    height: 500px ;
+    border-radius: var(--border-radius);
+    background-color:var(--card-back);
+
+}
+
+.card .top{
+    border-radius: 29px 29px 0 0;
+    width: 100%;
+    height: 60%;
+    background:url(../picture/img/rain.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card .top .top-filter{
+    background: var(--back-filter);
+    border-radius: 29px 29px 0 0;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.card .top .top-filter h3{
+    color: #fff;
+    font-size: 1.7rem;
+}
+.card .top .top-filter .city-country{
+    display: flex;
+    width: 100%;
+    /* background-color: aquamarine; */
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.card .top .top-filter .city-country .country{
+    background-color: var(--country-back);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    /* padding: 10px; */
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+.deg-par h3{
+    font-size: 3rem !important;
+}
+.card .bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: blueviolet; */
+    height: 40%;
+    border-radius: 0 0 30px 30px;
+    padding: 40px 20px;
+}
+
+.card .bottom .weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+/* .card .bottom .weather h3{
+    
+} */
+
+.card .bottom .weather img{
+    width: 100px;
+    margin-top: 20px;
+}
+
+.card .bottom .line{
+    width: 1px;
+    height: 80%;
+    background-color: var(--country-back);
+}
+
+
+.card .bottom .compass{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 170px;
+
+}
+.card .bottom .compass .wind-compass{
+    /* background-color: chartreuse; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card .bottom .compass .compass-img{
+    width: 150px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.card .bottom .compass .arrow-img{
+    height: 80px;
+    position: absolute;
+    top: 25%;
+    right: 45%;
+    
+    transform: rotate(180deg);
+
+}

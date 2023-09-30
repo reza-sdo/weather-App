@@ -1,0 +1,9 @@
+:root{
+    --back-gra : linear-gradient(251deg, #0F2027 24.61%, #203A43 65.05%, #2C5364 100%);
+    --back-filter : rgba(0, 0, 0, 0.72);
+    --card-back : #91ACB6;
+    --country-back : #2C5364;
+    --border-radius: 30px;
+    --search-back : rgba(255, 255, 255, 0.39);
+    
+}
